@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: Check specs
         run: |
-          cat /boot/config-5.10-201
+          cat /boot/config-*
