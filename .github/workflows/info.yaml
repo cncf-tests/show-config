@@ -11,10 +11,9 @@ on:
 jobs:
   specs:
     name: specs
-    runs-on: actuated
+    runs-on: actuated-arm64-1cpu-4gb
     steps:
-      - uses: actions/checkout@v1
       - name: Check specs
         run: |
           cat /lib/modules/$(uname -r)/.config
-          
+        
