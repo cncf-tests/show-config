@@ -16,4 +16,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: Check specs
         run: |
-          cat /boot/config-*
+          cat /lib/modules/$(uname -r)/.config
+          
